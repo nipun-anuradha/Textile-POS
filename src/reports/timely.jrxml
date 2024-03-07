@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stock" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c0403024-5289-438b-9f6f-4f8d799ff958">
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<parameter name="Parameter8" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="257" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="0" width="201" height="40" uuid="be1dcc91-f3b8-4c71-85b9-5e4b226c7e9f"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SK FASHION]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-20" y="-20" width="90" height="81" uuid="6c26ff05-4e6e-4278-b831-382ea507a3b2"/>
+				<imageExpression><![CDATA["D:/Projects/Java/Textile_POS/src/img/flogo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="50" y="30" width="201" height="21" uuid="d5dd35bd-9aca-47c8-9243-ff3a6ac2ec15"/>
+				<text><![CDATA[your's fashion house]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-11" y="130" width="232" height="127" backcolor="#D6D0D0" uuid="6c7c284b-9497-4b5a-8cd6-c8e8f1ecedc6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-20" y="76" width="595" height="21" forecolor="#FFFFFF" backcolor="#FAB216" uuid="180dc036-215f-457c-988c-fcf008987ebb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="180" y="51" width="160" height="25" forecolor="#FAC011" uuid="268262c7-c442-4fba-ab79-28e47c35d090"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Timely Report For]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="340" y="51" width="139" height="25" uuid="f7fea718-71fc-4510-adfd-54d38478ea43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="97" width="120" height="21" uuid="af76b0b0-233b-478d-9d1f-56633371431d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Genarated date]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="250" y="130" width="310" height="127" backcolor="#D6D0D0" uuid="514b1abe-c755-43f3-a04b-e14643461e7b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="470" y="97" width="100" height="21" uuid="44e2c4ce-9442-45b7-a7c4-5a407982eed1"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="150" width="100" height="20" uuid="84d527ed-a161-4adc-aba5-e3704569cd52"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="150" width="100" height="20" uuid="17b160de-ef19-42ac-ba0b-3507d6699896"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="150" width="80" height="20" uuid="94951251-ec88-4f25-b580-51c2911a0fa9"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Total Sales :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="100" height="20" uuid="115e8f2c-f6f4-40b3-b451-3233d5454b1e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Orderd Quentity :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="180" width="100" height="20" uuid="61d6dc8a-999f-4c6b-94e6-ba188e6a800a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sold Quentity :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="180" width="100" height="20" uuid="978e523b-ef04-4f9c-b7b4-e9bdc2ec8265"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="220" width="100" height="20" uuid="e745438d-ab12-4467-a3c7-5df836fd7538"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="271" y="180" width="131" height="20" uuid="e42008c4-e1c5-4b7b-8fe4-1b1632a948f2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Investment for stock :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="410" y="180" width="100" height="20" uuid="9c92b69a-f4dc-4b6a-8c62-e881ed625454"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="220" width="100" height="20" uuid="ddd750d1-c2e7-416a-8fbe-a1757a147981"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="220" width="131" height="20" uuid="7ada15f7-e3fd-4bbc-9e3a-d423ebc9c073"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Gross profit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="200" width="140" height="15" uuid="376624b8-45d6-410f-a4c7-e9a5c2103915"/>
+				<text><![CDATA[_______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="237" width="140" height="15" uuid="c2acdc21-ff70-4059-9026-3f5b753a21a0"/>
+				<text><![CDATA[_______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="200" width="140" height="15" uuid="15f99ca8-b679-44e8-aae1-96858a60d740"/>
+				<text><![CDATA[_______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="240" width="140" height="15" uuid="f83cb0ff-5333-4c86-bc1c-dfbc73cd3473"/>
+				<text><![CDATA[_______________________]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="88" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="60" width="80" height="23" uuid="4edd1018-5e85-4d7d-8a60-da71ed7520cf"/>
+				<box padding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="60" width="120" height="23" uuid="d510a85e-f54e-470e-b217-c3f62ef89dbd"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="16" width="80" height="22" uuid="fb25b9b4-3ed2-4f6b-8f90-591dca66ad75"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suppliers ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="38" width="80" height="22" forecolor="#FFFCFC" backcolor="#FAB216" uuid="ae93961b-4232-4175-8410-3a1b8f5d1ba6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="80" y="38" width="120" height="22" forecolor="#FCFCFC" backcolor="#FAB216" uuid="6036e3d2-3280-4796-82ea-8cab3af9d2bc"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="66" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="39" width="594" height="1" forecolor="#FAC011" backcolor="#FAC011" uuid="9a83327b-74ea-4ff6-ad26-9a9ed318d369"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="181" y="40" width="201" height="21" uuid="9f2d1e05-6d12-461b-8658-5f9885294df7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[- system genatated report -]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
